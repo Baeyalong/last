@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>偏最小二乘判别分析</title>
+<style>
+body {
+  background-image: url('image/image16.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  }
+  body,td,th {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+  }  
+table {
+    margin: 0 auto;
+  }
+</style>
+</head>
+
+<body>
+  <h1 style="text-align: center; font-family: SimSun, sans-serif; font-weight: bold;">偏最小二乘判别分析
+  </h1>
+  
+  <table width="1170" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style=" font-size:28px; color:#f04155; font-weight:bold;">一、偏最小二乘判别分析简介</td>
+    <td style="text-align:center; font-size:28px;"><p><a href="https://lu-13579.shinyapps.io/PLS1/" target="_blank"><strong>点击此处进入分析界面</strong></a></p>
+      </td>
+  </tr>
+    <tr>
+    <td style=" font-size:20px; text-indent:2em; ">偏最小二乘判别分析（PLS-DA）与主成分分析不同，是一种有监督的学习方法，即在建模时用到分组标签的信息。在建立PLS-DA模型时，需要事先指定用于建模的主成分，不同的主成分数对应着不同的PLS-DA模型，一般按照一定的准则选取前面几个主成分建立PLS-DA模型。基于所建立的PLS-DA模型，可计算衡量对模型贡献大小的VIP值。近年来，PLS-DA方法在代谢组学研究中得到了广泛的应用，并成为一种标准的高维数据分析方法。代谢组学中常利用VIP值进行变量筛选，如VIP>1。</td>
+     <td rowspan="4" style="width:650; height:700; padding-left:20px;"><img src="image2/PLS/1.jpg" width="600"; height="700">
+     </td>
+   </tr>
+       <tr>
+         <td style="font-size:28px; color:#f04155; font-weight:bold;">二、数据格式</td>
+       </td>
+       </tr>
+         <tr> 
+       <td style="width:650; height:400;"><img src="image2/PLS/2.png" width="600" height="390"></td>
+         </tr>
+      <tr>
+        <td style="font-size:20px; padding-right:20px;">注：<br>
+        1、数据格式为“.csv”，数据中避免中文、空格或特殊字符<br>
+        2、数据变量名必须为英文、阿拉伯数字或下划线的组合<br>
+        3、自变量列数可以输入多列，以英文状态下的逗号或冒号分隔，如:2,3,4或2:4<br>
+        4、因变量必须为二分类变量<br>
+        5、导入数据后，各变量所对应的列数可在输出界面显示和查询</td>
+      </tr>
+    <tr>
+      <td style=" font-size:28px; color:#f04155; font-weight:bold;">三、输出结果展示</td>
+    
+    </tr>
+    <tr>
+      <td style="font-size:20px; text-indent:2em;"> 输出结果包括模型的R2X、R2Y、Q2、VIP值和PLS-DA得分图。下载表格中，提供所有自变量的VIP值。<br>
+         &nbsp;&nbsp;示例如下：
+      </td>
+    </tr>
+   <tr>
+     <td><img src="image2/PLS/3.png" width="600" height="700">
+     </td>
+   </tr>       
+    </table>
+</body>
+</html>
