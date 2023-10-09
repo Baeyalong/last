@@ -156,6 +156,9 @@
     line-height: 1.7;
     text-indent: 2em;
   }
+  .counter-text {
+      font-family: 'SimSun', 'Times New Roman', serif;
+  }
    
 </style>
 
@@ -426,7 +429,7 @@ visits = 1
 else
 visits = parseInt(visits) + 1
 setCookie("counter", visits, now)
-document.write("总访问量：" + visits )
+document.write('<span class="counter-text">总访问量：'+visits+ '</span>' )
 // -->
 </script>
 
